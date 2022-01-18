@@ -15,7 +15,7 @@ pipeline {
       }
     }
     
-    stage('build')
+    stage('Maven build')
     {
       steps
       {
@@ -26,7 +26,7 @@ pipeline {
     {
       steps
       {
-     sh 'mvn tomcat:deploy' 
+     sh 'copy /var/lib/jenkins/workspace/Web_app_deploy_on_tomcat/target/SecondWeb.war /usr/share/apache-tomcat/webapps/' 
     }
   }  
   }
