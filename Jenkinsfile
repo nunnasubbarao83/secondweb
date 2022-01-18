@@ -26,7 +26,7 @@ pipeline {
     {
       steps
       {
-     sh 'copy /var/lib/jenkins/workspace/Web_app_deploy_on_tomcat/target/SecondWeb.war /usr/share/apache-tomcat/webapps/' 
+     sh 'cp /var/lib/jenkins/workspace/Web_app_deploy_on_tomcat/target/SecondWeb.war /usr/share/apache-tomcat/webapps/' 
     }
   }  
   }
