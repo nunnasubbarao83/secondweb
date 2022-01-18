@@ -5,7 +5,9 @@ pipeline {
         maven 'maven' 
         jdk 'java' 
     }
+  
   agent any
+  
   stages {
     stage('Cloning Git') {
       steps {
@@ -15,7 +17,7 @@ pipeline {
     
     stage('build')
     {
-      step
+      steps
       {
      sh 'mvn clean package' 
     }
