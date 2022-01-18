@@ -12,5 +12,12 @@ pipeline {
         git branch: 'master', credentialsId: 'nunnasubbarao83', url: 'https://github.com/nunnasubbarao83/secondweb.git'
       }
     }
+    
+    stage('build')
+    {
+      step
+      {
+     sh 'mvn clean package' 
+    }
   } 
 }
