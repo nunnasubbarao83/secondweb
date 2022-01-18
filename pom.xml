@@ -16,9 +16,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>SecondWeb</finalName>
-    	
+    <finalName>SecondWeb</finalName>	
 
-    
-  </build>
+    </build>
 </project>
